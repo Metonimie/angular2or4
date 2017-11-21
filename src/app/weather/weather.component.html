@@ -1,0 +1,18 @@
+<h1 class="mt-5 mx-auto" *ngIf="data.length == 0">
+    No data available. Add some :-)
+</h1>
+<article class="col-md-5" *ngFor="let wdata of data"
+[ngClass]="{
+        'sunny': wdata.status === 'Sunny' || wdata.status === 'Clear',
+        'cloud': wdata.status === 'Clouds',
+        'storm': wdata.status === 'Stormy',
+        'rain': wdata.status === 'Rain' || wdata.status === 'Drizzle'
+        }"
+>
+    <h1>{{ wdata.status }}</h1>
+    <h2>{{wdata.min}}/{{wdata.max}}°C</h2>
+    <p class="pull-right">{{wdata.location}}</p>
+</article>
+<!--<a routerLink="/detail/{{hero.id}}">-->
+<!--  <span class="badge">{{hero.id}}</span> {{hero.name}}-->
+<!--</a> -->

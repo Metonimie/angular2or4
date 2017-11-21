@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+article {
+    border: 1px solid #606060;
+    padding: 20px;
+    margin: 5px;
+    /*text-shadow: -1px 0 #C0C0C0,0 1px #C0C0C0,1px 0 #C0C0C0,0 -1px #C0C0C0;*/
+}
+
+
+.sunny {
+    background-image: url("./assets/sunny.jpg");
+    background-position: top center;
+}
+
+.storm {
+    background-image: url("./assets/storm.png");
+    background-position: center center;
+    color: #e3e3e3;
+}
+
+.rain {
+    background-image: url("./assets/rain.jpg");
+    background-position: center center;
+    color: #e3e3e3;
+}
+
+.cloud {
+    background-image: url("./assets/cloud.jpg");
+    background-position: right center;
+}
